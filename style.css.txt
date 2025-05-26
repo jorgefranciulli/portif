@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #222;
+    --secondary-color: #555;
+    --background-color: #fff;
+    --text-color: #333;
+    --accent-color: #0077cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.cabecalho {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cabecalho h1 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.cabecalho p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.menu {
+    background: var(--background-color);
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--accent-color);
+}
+
+.conteudo {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.secao {
+    margin-bottom: 2rem;
+}
+
+.secao h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.projeto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.contato-info p {
+    margin-bottom: 0.5rem;
+}
+
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    border-top: 1px solid #eee;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+}
